@@ -2,6 +2,18 @@
 
 	<div style="text-align: right;" class="btn-group">
 		<a href="#" class="btn btn-default">Copy <span class="glyphicon glyphicon-sound-stereo"></span></a>
+		<div style="text-align: right;" class="btn-group">
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+		    Export <span class="glyphicon glyphicon-share-alt"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+		    <li><a href="#">1m as PNG</a></li>
+		    <li><a href="#">1m as CSV</a></li>
+		    <li><a href="#">1m as JSON</a></li>
+		    <li><a href="#">All data as CSV</a></li>
+		    <li><a href="#">All data as JSON</a></li>
+		  </ul>
+		</div>
 		<a href="{{ include.close }}" class="btn btn-default">Remove <span class="glyphicon glyphicon-remove-sign"></span></a>
 	</div>
 
@@ -13,8 +25,6 @@
 		<button type="button" class="btn btn-default active">1m</button>
 		<button type="button" class="btn btn-default">All</button>
 	</div>		
-	
-	<br /><br />
 
 	<div class="btn-group">
 	  <button type="button" class="btn btn-default">Ending</button>
@@ -29,20 +39,17 @@
 	  </ul>
 	</div>
 
-	<span class="glyphicon glyphicon-stats" style="font-size: 15em; text-align: center;"></span>
-
-	<a href="#" class="btn btn-lg"></a>	
-
-	<div style="text-align: right;" class="btn-group">
-	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-	    Export <span class="glyphicon glyphicon-share-alt"></span>
-	  </button>
-	  <ul class="dropdown-menu" role="menu">
-	    <li><a href="#">1m as PNG</a></li>
-	    <li><a href="#">1m as CSV</a></li>
-	    <li><a href="#">1m as JSON</a></li>
-	    <li><a href="#">All data as CSV</a></li>
-	    <li><a href="#">All data as JSON</a></li>
-	  </ul>
+	<div style="margin-bottom: 1em;">
+		<span class="glyphicon glyphicon-stats" style="font-size: 15em; text-align: center;"></span>
 	</div>
+
+	<div style="clear: left;">
+		<label class="checkbox-inline" for="inlineCheckbox1">
+		  <input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked"> Public
+		</label>
+		<label class="checkbox-inline" for="inlineCheckbox2">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2" checked="checked"> Private
+		</label>	
+	</div>
+
 </div>
