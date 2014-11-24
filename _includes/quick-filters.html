@@ -1,12 +1,14 @@
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Quick filter <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="#">One day back</a></li>
-    <li><a href="#">One week back</a></li>
-    <li><a href="#">One month back</a></li>
-    <li><a href="#">One year back</a></li>
-    <li class="divider"></li>
-    <li><a href="#">The last quarter</a></li>
-    <li><a href="#">The last financial year</a></li>
-  </ul>
-</div>
+<br /><br />
+<form class="form-horizontal row" role="form">
+	<div class="form-group col-xs-6">
+		<label for="start-date">From:</label>
+		<input type="date" value="2014-09-01" id="start-date" name="start-date" class="">
+		{% include quick-filters-up.html %}
+	</div>
+	<div class="form-group col-xs-6" style="text-align: right;">
+		<label for="end-date">To:</label>
+		<input type="date" value="2014-11-01" id="end-date" name="end-date" class="">
+		{% include quick-filters-down.html %}
+	</div>		
+</form>
+<br /><br />
