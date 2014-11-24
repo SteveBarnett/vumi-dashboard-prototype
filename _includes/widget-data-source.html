@@ -1,8 +1,22 @@
 <div class="input-group">
-	<label for="widget-data-source">Data source</label>
-	<select name="widget-data-source" id="widget-data-source" class="form-control">
-		<option value=""></option>
-		<option value="">Gender stats</option>
-		<option value="">Age stats</option>
+	<label for="widget-metric-group"><h4>Metric group</h4></label>
+	<select name="widget-metric-group" id="widget-metric-group" class="form-control">
+		<option value="">Gender</option>
+		<option value="">Age</option>
+		<option value="">Favourite Colour</option>
 	</select>
+</div>
+
+<h4>Metric filter</h4>
+<div class="input-group">
+	<label for="widget-metric-filter-1" class="control-label">
+		<input type="checkbox" checked="checked" id="widget-metric-filter-1" name="widget-metric-filter-1">
+	Male
+	</label>	
+</div>
+<div class="input-group">
+	<label for="widget-metric-filter-2" class="control-label">
+		<input type="checkbox" checked="checked" id="widget-metric-filter-2" name="widget-metric-filter-2">
+		Female
+	</label>
 </div>
