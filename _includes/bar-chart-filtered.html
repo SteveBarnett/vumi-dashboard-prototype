@@ -1,57 +1,11 @@
 <div class="col-xs-3 panel panel-default" style="text-align: center;">
 
-	<div class="panel-heading" style="text-align: right; margin-right: -15px; margin-left: -15px;">
-		<a href="#"><span class="glyphicon glyphicon-move"></span></a>
-	</div>
+	{% include bar-chart-title.html %}
 
 	<br />
 
-	<div style="text-align: right;" class="btn-group">
-		<a href="#" class="btn btn-default">Copy <span class="glyphicon glyphicon-sound-stereo"></span></a>
-		<div style="text-align: right;" class="btn-group">
-		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-		    Export <span class="glyphicon glyphicon-share-alt"></span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="#">1m as PNG</a></li>
-		    <li><a href="#">1m as CSV</a></li>
-		    <li><a href="#">1m as JSON</a></li>
-		    <li><a href="#">All data as CSV</a></li>
-		    <li><a href="#">All data as JSON</a></li>
-		  </ul>
-		</div>
-		<a href="{{ include.close }}" class="btn btn-default">Remove <span class="glyphicon glyphicon-remove-sign"></span></a>
-	</div>
+	{% include toolbar.html %}
 
-	<h2>Title of the widget</h2>
-
-	<div class="btn-group" role="group" aria-label="Date filter">
-		<button type="button" class="btn btn-default">1d</button>
-		<button type="button" class="btn btn-default">1w</button>
-		<button type="button" class="btn btn-default active">1m</button>
-		<button type="button" class="btn btn-default">All</button>
-	</div>		
-
-	<div class="btn-group">
-	  <button type="button" class="btn btn-default">Ending</button>
-	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-	    November 2014 <span class="caret"></span>
-	    <span class="sr-only">Toggle Dropdown</span>
-	  </button>
-	  <ul class="dropdown-menu" role="menu">
-	    <li><a href="#">August 2014</a></li>
-	    <li><a href="#">September 2014</a></li>
-	    <li><a href="#">October 2014</a></li>
-	  </ul>
-	</div>
-
-	<div style="margin-bottom: 1em;">
-		<span class="glyphicon glyphicon-stats" style="font-size: 15em; text-align: center; color: #999;"></span>
-	</div>
-
-	<div style="clear: left;">
-		<a href="saved-a-widget.html"><span class="glyphicon glyphicon-unchecked"></span> Male</a>
-		<a href="saved-a-widget.html"><span class="glyphicon glyphicon-check"></span> Female</a>
-	</div>
+	{% include bar-chart-chart.html %}
 
 </div>
