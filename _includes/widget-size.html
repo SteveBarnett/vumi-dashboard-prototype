@@ -1,10 +1,9 @@
-<div class="input-group">
-	<h4>Item width (columns)</h4>
+<div class="input-group" style="max-width: 250px;">
+	<h4>Item layout</h4>
 	<div class="btn-group" role="group" aria-label="Widget size">
-		{{ include.active }}
-	  <a href="add-new-widget.html" class="btn btn-default {{ include.active }}">1</a>
-	  <a href="add-new-widget-2.html" class="btn btn-default {{ include.active }}">2</a>
-	  <a href="add-new-widget-3.html" class="btn btn-default {{ include.active }}">3</a>
-	  <a href="add-new-widget-4.html" class="btn btn-default {{ include.active }}">4</a>
+	  <a href="add-new-widget.html" class="btn btn-default col-xs-3 {% if include.active == "3" %}active{% endif %}"><img src="layout-1.png" style="width: 100%;" /></a>
+	  <a href="add-new-widget-2.html" class="btn btn-default col-xs-3 {% if include.active == "6" %}active{% endif %}"><img src="layout-2.png" style="width: 100%;" /></a>
+	  <a href="add-new-widget-3.html" class="btn btn-default col-xs-3 {% if include.active == "9" %}active{% endif %}"><img src="layout-3.png" style="width: 100%;" /></a>
+	  <a href="add-new-widget-4.html" class="btn btn-default col-xs-3 {% if include.active == "12" %}active{% endif %}"><img src="layout-4.png" style="width: 100%;" /></a>
 	</div>
 </div>
