@@ -8,11 +8,11 @@
 			    <h3 class="panel-title">Add new item</h3>
 			  </div>
 			  <div class="panel-body">
-				{% include widget-data-source.html %}
+				{% include widget-data-source.html specific="add-new-widget-specific-date.html" over="add-new-widget.html" %}
 				<br />
 				{% include widget-type.html %}
 				<br />
-				{% include quick-filters.html %}
+				{% include quick-filters.html type="over" %}
 				<br />
 				{% include widget-size.html active=include.colspan %}
 				<br />
