@@ -1,11 +1,24 @@
+{% if include.type == "specific" %}
 <div class="input-group">
-	<label for="widget-chart-type">Item type</label>
-	<select name="widget-chart-type" id="widget-chart-type" class="form-control">
+	<label>Item type</label>
+	<select class="form-control">
 		<option value="">Bar chart</option>
+		<option value="">Stacked Bar chart</option>
 		<option value="">Pie chart</option>
 		<option value="">Line chart</option>
 		<option value="">Last value chart</option>
-		<option value="">Map</option>
 		<option value="">Text block</option>
 	</select>
 </div>
+{% endif %}
+
+{% if include.type == "range" %}
+<div class="input-group">
+	<label>Item type</label>
+	<select class="form-control">
+		<option value="">Bar chart</option>
+		<option value="">Stacked Bar chart</option>
+		<option value="">Line chart</option>
+	</select>
+</div>
+{% endif %}
