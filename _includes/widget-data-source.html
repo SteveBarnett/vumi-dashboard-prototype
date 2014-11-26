@@ -1,11 +1,25 @@
 <div class="input-group">
-	<label for="widget-metric-group"><h4>Metric group</h4></label>
-	<select name="widget-metric-group" id="widget-metric-group" class="form-control">
-		<option value="">Gender</option>
-		<option value="">Age</option>
-		<option value="">Favourite Colour</option>
-	</select>
+	<h4>Metric group</h4>
+
+	<div style="text-align: right;" class="btn-group">
+	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	    Gender <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu">
+	  	<li style="padding-left: 0.5em; "><strong>At a specific date</strong></li>
+	    <li><a href="#">Gender</a></li>
+	    <li><a href="#">Age</a></li>
+	    <li><a href="#">Favourite Color</a></li>
+	    <li class="divider"></li>
+	  	<li style="padding-left: 0.5em; "><strong>Over time</strong></li>
+	    <li><a href="#">Gender</a></li>
+	    <li><a href="#">Age</a></li>
+	    <li><a href="#">Favourite Color</a></li>    
+	  </ul>
+	</div>
 </div>
+
+<br />
 
 <h4>Metric filter</h4>
 <div class="input-group">
