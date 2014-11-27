@@ -1,16 +1,21 @@
-<nav class="navbar navbar-default" role="navigation">
+<h1><a href="./" class="navbar-brand">{{ site.title }}</a></h1>
+
+<nav class="navbar navbar-default" role="navigation" style="clear: both;">
   <div style="padding: 1em;">
     <div class="container-fluid">
 
     <div class="nav col-xs-6">
-      <h1><a href="./" class="navbar-brand">{{ site.title }}</a></h1>
-      <a href="index.html" style="margin: 1em 0 0 2em; display: inline-block;"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add a new, empty, dashboard for this project</a>
+      <div class="btn-group" role="group" aria-label="...">
+        <a href="index.html" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add another dashboard</a>
+        <a href="dashboard2-filled.html" class="btn btn-default">Make a copy of this dashboard <span class="glyphicon glyphicon-share-alt"></span></a>
+      </div>
     </div>
 
-    <ul class="nav navbar-nav navbar-right list-inline" style="margin-top: 2em;">
+    <ul class="navbar-right list-inline col-xs-6">
       <li><strong>Shared with:</strong></li>
       <li>justin@praekelt.com (admin);</li>
       <li>susan@unicef.org.</li>
+      <li><a href="edit-visibility.html" class="btn btn-default">Change <span class="glyphicon glyphicon-edit"></span></a></li>
    </ul>
 
     </div>
