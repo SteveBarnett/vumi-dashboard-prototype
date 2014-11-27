@@ -4,9 +4,7 @@
 		<div class="col-xs-{{ include.colspan }}">
 
 			<div class="panel panel-default">
-			  <div class="panel-heading">
-			    <h3 class="panel-title">Add new item</h3>
-			  </div>
+			  {% include panel-heading.html %}
 			  <div class="panel-body">
 				{% include widget-data-source.html %}
 				<br />
