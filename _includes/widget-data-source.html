@@ -1,49 +1,28 @@
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="display: block; position: relative;">
-          Metrics <span class="caret" style="position: absolute ;right: 0; top: 5px;"></span>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse {{ include.accordion }}" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
+<div class="input-group">
+	<h4>Metric group</h4>
+	<select name="" id="" class="form-control">
+		<option value="">Unique Users</option>
+		<option value="">SMSes received</option>
+		<option value="">USSD sessions initiated</option>
+		<option value="">USSD Pages viewed</option>
+		<option value="">Questions answered</option>
+		<option value="">Active users</option>
+	</select>
 
-        <div class="input-group">
-			<h4>Metric group</h4>
+</div>
 
-			<select name="" id="" class="form-control">
-				<option value="">Unique Users</option>
-				<option value="">SMSes received</option>
-				<option value="">USSD sessions initiated</option>
-				<option value="">USSD Pages viewed</option>
-				<option value="">Questions answered</option>
-				<option value="">Active users</option>
-			</select>
+<br />
 
-		</div>
-
-		<br />
-
-		<h4>Metric filter</h4>
-		<div class="input-group">
-			<label class="control-label">
-				<input type="checkbox" checked="checked">
-			USSD
-			</label>	
-		</div>
-		<div class="input-group">
-			<label class="control-label">
-				<input type="checkbox"  checked="checked">
-			SMS
-			</label>
-		</div>
-
-		<br />
-		{% include target.html %}
-
-      </div>
-    </div>
-  </div>
+<h4>Metric filter</h4>
+<div class="input-group">
+	<label class="control-label">
+		<input type="checkbox" checked="checked">
+	USSD
+	</label>	
+</div>
+<div class="input-group">
+	<label class="control-label">
+		<input type="checkbox"  checked="checked">
+	SMS
+	</label>
 </div>
