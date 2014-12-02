@@ -1,4 +1,17 @@
-<div class="panel-heading" style="text-align: right; margin-right: -15px; margin-left: -15px;">
-	<h3 class="panel-title" style="float: left;">Title of item <a href="save-a-widget-title-editing.html" style="margin-left: 1em; color: #337ab7;"></a></h3>
-	<a href="#"><span class="glyphicon glyphicon-move"></span></a>
+<div class="panel-heading clearfix" style="text-align: left; margin-right: -15px; margin-left: -15px;">
+	<h3 class="panel-title" style="float: left; position: relative;
+top: 0.5em;">Title of item <a href="save-a-widget-title-editing.html" style="margin-left: 1em; color: #337ab7;"></a></h3>
+
+	<div style="text-align: right; float: right;" class="btn-group">
+	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu" style="left: -16em;">
+	  	<li><a href="{{ include.edit }}">Edit <span style="margin-left: 0.5em;" class="glyphicon glyphicon-edit"></span></a></li>
+	  	<li><a href="{{ include.close }}">Remove <span style="margin-left: 0.5em;" class="glyphicon glyphicon-remove-sign"></span></a></li>
+	  	<li><a href="#">Export as SVG (image, for reports)</a></li>
+	    <li><a href="#">Export as CSV (for spreadsheets)</a></li>
+	    <li><a href="#">Export as JSON (for developers)</a></li>
+	  </ul>
+	</div>
 </div>
