@@ -2,13 +2,11 @@
 	<div class="row">
 
 		<div class="col-xs-{{ include.colspan }}">
-metrics, date, type of chart, layout
+
 			<div class="panel panel-default">
 			  {% include panel-heading.html %}
 			  <div class="panel-body">
-				{% include widget-data-source.html %}
-				<br />
-				{% include target.html %}
+				{% include widget-data-source.html accordion="in" %}
 				<br />
 				{% include quick-filters.html %}
 				<br />
