@@ -1,7 +1,19 @@
+---
+layout: default
+---
+
 <div class="well well-lg">
 	<div class="row">
 
-		<div class="col-xs-{{ include.colspan }}">
+		<div class="col-xs-3">
+			{% include btn-add-new-widget.html url="add-new-widget.html" %}
+		</div>
+
+  	  	<div class="col-xs-3">
+  			{% include btn-add-new-widget.html url="add-new-widget-in-pos2.html" %}
+	  	</div>
+
+		<div class="col-xs-3">
 
 			<div class="panel panel-default">
 			  {% include panel-heading.html %}
@@ -16,19 +28,11 @@
 				<br />
 				{% include widget-size.html active=include.colspan %}
 				<br />
-				{% include btn-save-widget.html %}
+				<a href="saved-a-widget-pos3.html" class="btn btn-default btn-lg">Save this item</a> or <a href="index.html">Cancel</a>
 			  </div>
 			</div>
-
 		</div>
 
-		<div class="col-xs-3">
-			{% include btn-add-new-widget.html url="add-new-widget-in-pos2.html" %}
-		</div>
-
-  	  	<div class="col-xs-3">
-  			{% include btn-add-new-widget.html url="add-new-widget-in-pos3.html" %}
-	  	</div>
   	  	<div class="col-xs-3">
 	  		{% include btn-add-new-widget.html url="add-new-widget-in-pos4.html" %}
 	  	</div>
