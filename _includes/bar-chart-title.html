@@ -6,16 +6,23 @@ top: 0.5em;">Title of item <a href="save-a-widget-title-editing.html" style="mar
 	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 	    <span class="caret"></span>
 	  </button>
-	  <ul class="dropdown-menu" role="menu" style="left: -16em;">
+	  <ul class="dropdown-menu" role="menu" style="left: -16em; width: 18.5em;
+}">
 	  	<li><a href="{{ include.edit }}">Edit <span style="margin-left: 0.5em;" class="glyphicon glyphicon-edit"></span></a></li>
 	  	<li><a href="{{ include.close }}">Remove <span style="margin-left: 0.5em;" class="glyphicon glyphicon-remove-sign"></span></a></li>
 	  	<li role="presentation" class="divider"></li>
-	  	<li><a href="#">Export as SVG (image, for reports)</a></li>
-	    <li><a href="#">Export as CSV (for spreadsheets)</a></li>
-	    <li><a href="#">Export as JSON (for developers)</a></li>
+	  	<li><h5 style="padding-left: 1em;">Export</h5></li>
+	  	<li><a href="#">As SVG (image, for reports)</a></li>
+	    <li><a href="#">As CSV (for spreadsheets)</a></li>
+	    <li><a href="#">As JSON (for developers)</a></li>
 	    <li role="presentation" class="divider"></li>
-	    <li><a href="{{ include.prev }}"><span class="glyphicon glyphicon-arrow-left"></span> Move one column left</a></li>
-	    <li><a href="{{ include.next }}">Move one column right <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+	    <li><h5 style="padding-left: 1em;">Move</h5></li>
+	    <li><a href="{{ include.prev }}"><span class="glyphicon glyphicon-arrow-left"></span> One column left</a></li>
+	    <li><a href="{{ include.next }}">One column right <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+	    <li role="presentation" class="divider"></li>
+	    <li><h5 style="padding-left: 1em;">Resize</h5></li>
+	    <li><a href="{{ include.prev }}"><span class="glyphicon glyphicon-arrow-left"></span> One column left</a></li>
+	    <li><a href="{{ include.next }}">One column right <span class="glyphicon glyphicon-arrow-right"></span></a></li>
 	  </ul>
 	</div>
 </div>
