@@ -1,12 +1,15 @@
 <div class="input-group" id="dates" style="width: 100%;">
 	<label for="start-date">From:</label>
-	<input type="date" value="2014-09-01" max="2014-12-03" id="start-date" name="start-date" class="form-control" style="background: transparent;">
+	<input type="date" value="2014-09-01" min="2014-09-01" max="2014-12-04" id="start-date" name="start-date" class="form-control" style="background: transparent;">
 	<span class="glyphicon glyphicon-calendar" style="position: absolute; right: 1em; bottom: 0; top: 2.5em;"></span>
+	<div id="metricstart" class="invisible">
+		This is first day metrics were recorded.
+	</div>
 </div>
 <br />
 <div class="input-group today">
 	<label for="end-date">To:</label>
-	<input type="date" value="2014-12-03" max="2014-12-03" id="end-date" name="end-date" class="form-control" style="background: transparent;">
+	<input type="date" value="2014-12-04" min="2014-09-01" max="2014-12-04" id="end-date" name="end-date" class="form-control" style="background: transparent;">
 	<span class="glyphicon glyphicon-calendar" style="position: absolute; right: 1em; bottom: 0; top: 2.5em;"></span>
 	<div class="checkbox">
     <label id="today" class="invisible">
