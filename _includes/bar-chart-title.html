@@ -6,20 +6,65 @@ top: 0.5em;">Title of item <a href="save-a-widget-title-editing.html" style="mar
 		<span class="glyphicon glyphicon-move"></span>
 	</div>
 
-	<div style="text-align: right; float: right;" class="btn-group">
-	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-	    Export <span class="caret"></span>
-	  </button>
-	  <ul class="dropdown-menu" role="menu" style="left: -13em; width: 18.5em;
-}">
-	  	<li><h5 style="padding-left: 1em;">All data</h5></li>
-	    <li><a href="#">As CSV (for spreadsheets)</a></li>
-	    <li><a href="#">As JSON (for developers)</a></li>
-	  	<li role="presentation" class="divider"></li>
-	  	<li><h5 style="padding-left: 1em;">2014-09-01 to 2014-12-04</h5></li>
-	  	<li><a href="#">As SVG (image, for reports)</a></li>
-	    <li><a href="#">As CSV (for spreadsheets)</a></li>
-	    <li><a href="#">As JSON (for developers)</a></li>
-	  </ul>
+	<div style="text-align: right; float: right;">
+	  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+  		Export
+	</button>
+
 	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Export</h4>
+      </div>
+
+      <div class="modal-body">
+
+		<div class="btn-group" role="group" aria-label="...">
+		  <button id="all-data" type="button" class="btn btn-default active">All data</button>
+		  <button id="some-data" type="button" class="btn btn-default">Specific dates</button>
+		</div>
+
+		<br /><br />
+
+		<div class="row hidden" id="dates-pickers">
+			<div class="col-xs-6">
+			<div class="input-group" id="dates">
+				<label for="start-date">From:</label>
+				<input type="date" value="2014-09-01" min="2014-09-01" max="2014-12-04" id="start-date" name="start-date" class="form-control" style="background: transparent;">
+				<span class="glyphicon glyphicon-calendar" style="position: absolute; right: 1em; bottom: 0; top: 2.5em;"></span>
+				<div id="metricstart" class="invisible">
+					This is first day metrics were recorded.
+				</div>
+			</div>
+			</div>
+			
+			<div class="col-xs-6">
+			<div class="input-group today">
+				<label for="end-date">To:</label>
+				<input type="date" value="2014-12-04" min="2014-09-01" max="2014-12-04" id="end-date" name="end-date" class="form-control" style="background: transparent;">
+				<span class="glyphicon glyphicon-calendar" style="position: absolute; right: 1em; bottom: 0; top: 2.5em;"></span>
+				<div class="checkbox">
+			    <label id="today" class="invisible">
+			      <input type="checkbox"> <strong>Today</strong> (automatically update this to the latest date).
+			    </label>
+			  </div>
+			</div>
+			</div>
+		</div>
+
+		<p><a href="#">As SVG (image, for reports)</a></p>
+		<p><a href="#">As CSV (for spreadsheets)</a></p>
+		<p><a href="#">As JSON (for developers)</a></p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 </div>
