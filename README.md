@@ -3,9 +3,9 @@ vumi-dashboard-prototype
 
 http://praekelt.github.io/vumi-dashboard-prototype
 
-To hide the popover hint things, add the class `hide-popovers` to the `html` element.
-
 This prototype was built to test ideas and user journeys through the dashboard.
+
+Lots of notes have been added as popovers to provide context and extra information. To hide them, add the class `hide-popovers` to the `html` element. The full set of notes are at https://praekelt.hackpad.com/ep/group/BQ5BG3FkpYK .
 
 Do use:
 
@@ -17,3 +17,11 @@ Do not use:
 
 * the code;
 * the look and feel.
+
+---
+
+TODO:
+
+* tabbed dashboards: groups
+* copy dashboard layout / config
+* apply date across all widgets
